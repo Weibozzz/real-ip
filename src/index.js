@@ -1,4 +1,4 @@
-function getIPs(callback) {
+export const  getIPs = (callback)=> {
   var ip_dups = {};
 
   //compatibility for firefox and chrome
@@ -50,6 +50,3 @@ function getIPs(callback) {
   }, function(){});
 }
 
-export const ip =  getIPs(real_ip=>{
-  return real_ip;
-})
